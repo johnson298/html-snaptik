@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://snaptik.app/assets/css/all.min.css?v=1.392">
+</head>
+
+<body>
+    <div class="box">
+        <div class="img">
+            <img src="./img.png" alt="">
+        </div>
+        <div class="ct">
+            <div class="lst-tag">
+                <span>#Teamminecraftbuild</span>
+                <span>#minecraft</span>
+                <span>#tutorial</span>
+                <span>#Teamminecraftbuild</span>
+                <span>#minecraft</span>
+                <span>#tutorial</span>
+                <span>#Teamminecraftbuild</span>
+            </div>
+            <div class="actions">
+                <button class="btn-b btn-success">
+                    <div class="txt"><img class="i" src="./download.svg" alt=""> Download Video No Watermark</div>
+                    <div class="icon"><img src="./video.svg" alt=""> MP4</div>
+                </button>
+                <button class="btn-b btn-primary">
+                    <div class="txt"><img class="i" src="./download.svg" alt=""> Download Video Watermark</div>
+                    <div class="icon"><img src="./video.svg" alt=""> MP4</div>
+                </button>
+                <button class="btn-b btn-danger">
+                    <div class="txt"><img class="i" src="./download.svg" alt=""> Download Music</div>
+                    <div class="icon"><img src="./music.svg" alt=""> MP4</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        background: gray !important;
+    }
+
+    .box {
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 25px 30px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .img {
+        width: 280px;
+    }
+
+    .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ct {
+        flex: 1;
+        padding-left: 20px;
+    }
+
+    .lst-tag {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #EFEFEF;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        gap: 10px;
+    }
+
+    .lst-tag span {
+        display: inline-block;
+        padding: 9px 12px;
+        border: 1px solid #EFEFEF;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background: #40A73F;
+    }
+
+    .btn-primary {
+        background: #2E98F4;
+    }
+
+    .btn-danger {
+        background: #EE6176;
+    }
+
+    .btn-b {
+        margin-bottom: 14px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 4px 10px;
+        display: flex;
+        align-items: center;
+        border: none;
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        justify-content: space-between;
+    }
+
+    .btn-b .icon {
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding: 4px 12px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        margin-left: 10px;
+        align-items: center;
+
+    }
+
+    .btn-b.btn-success .icon {
+        color: #40A73F;
+    }
+
+    .btn-b.btn-primary .icon {
+        color: #2E98F4;
+    }
+
+    .btn-b.btn-danger .icon {
+        color: #EE6176;
+    }
+
+    .btn-b .icon img {
+        margin-bottom: 1px;
+        width: 18px;
+    }
+
+    .btn-b .i {
+        margin-right: 8px;
+    }
+
+    .btn-b {
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        .img {
+            display: none;
+        }
+
+        .box {
+            padding: 25px 15px;
+        }
+
+        .ct {
+            padding-left: 0;
+        }
+    }
+</style>
+<script>
+    // Lệnh copy
+    function copyText(text) {
+        navigator.clipboard.writeText(text);
+    }
+
+    // Lệnh paste
+    function pasteText() {
+        navigator.clipboard.readText()
+            .then(text => {
+                document.getElementById("myOutput").value = text;
+            })
+            .catch(err => {
+                console.error('Lỗi khi paste:', err);
+            });
+    }
+</script>
+
+</html>
